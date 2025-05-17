@@ -17,11 +17,13 @@ A web application that recognizes handwritten digits (0-9) drawn by the user on 
 
 ## Project Structure
 
-├── app.py # Flask backend for prediction 
-├── new_model.py # Model training and saving script 
-├── handwritten_digits.h5 # Saved trained model (generated after training) 
-├── web.html # Main frontend HTML file ├── styles.css # CSS for dynamic and modern UI ├── script.js # JavaScript for drawing, prediction, and UI logic 
-└── uploads/ # Temporary folder for uploaded images
+├── app.py # Flask backend for prediction  
+├── new_model.py # Model training and saving script  
+├── handwritten_digits.h5 # Saved trained model (generated after training)  
+├── web.html # Main frontend HTML file  
+├── styles.css # CSS for dynamic and modern UI  
+├── script.js # JavaScript for drawing, prediction, and UI logic  
+└── uploads/ # Temporary folder for uploaded images  
 
 ## How It Works
 

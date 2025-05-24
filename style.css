@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#maze {
+  display: inline-grid;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #aaa;
+}
+
+.path {
+  background-color: white;
+}
+
+.wall {
+  background-color: black;
+}
+
+.rat {
+  background-color: red;
+}

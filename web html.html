@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Digit Recognition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Handwritten Digit Recognition</h1>
+        <p>Draw a digit (0-9) below and click "Recognize" to see the prediction!</p>
+    </header>
+
+    <main>
+        <div class="canvas-container">
+            <canvas id="canvas" width="280" height="280"></canvas>
+        </div>
+        <div id="controls">
+            <button onclick="clearCanvas()">Clear</button>
+            <button onclick="predictDigit()">Recognize</button>
+            <label for="brush-size">Brush Size:</label>
+            <input type="range" id="brush-size" min="5" max="50" value="15" onchange="updateBrushSize(this.value)">
+        </div>
+
+        <div id="prediction-container">
+            <h2>Prediction: <span id="prediction">?</span></h2>
+            <div id="loading-spinner" style="display: none;">Loading...</div>
+        </div>
+
+        <div id="history">
+            <h2>Prediction History</h2>
+            <table id="history-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Prediction</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Prediction history rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by Team AI PBL | 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
